@@ -9,7 +9,7 @@ export function SiteHeader() {
           <a href="/kaskada-/partners/">Партнёрам</a>
           <a href="/kaskada-/sellers/">Продавцам</a>
         </nav>
-        <a className="rounded-full bg-graphite px-5 py-3 text-sm font-black text-cream" href="/kaskada-/dashboard/">Кабинет</a>
+        <a className="rounded-full bg-graphite px-5 py-3 text-sm font-black text-cream" href="/kaskada-/sellers/">Старт</a>
       </div>
     </header>
   );
