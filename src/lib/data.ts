@@ -9,6 +9,17 @@ export const categories = [
   'Ручная работа'
 ];
 
+export const navigation = [
+  { label: 'Каталог', href: '/catalog/' },
+  { label: 'Бренды', href: '/brands/' },
+  { label: 'Как работает', href: '/how-it-works/' },
+  { label: 'Покупателям', href: '/buyers/' },
+  { label: 'Партнёрам', href: '/partners/' },
+  { label: 'Продавцам', href: '/sellers/' },
+  { label: 'Маркетинг-план', href: '/marketing-plan/' },
+  { label: 'Кабинет', href: '/dashboard/' }
+];
+
 export const products = [
   {
     id: 'cream-north',
@@ -16,8 +27,11 @@ export const products = [
     brand: 'Северная Лаборатория',
     category: 'Косметика',
     price: 890,
+    rating: 4.9,
+    cashback: 89,
     tag: 'локальный уход',
-    description: 'Питательный крем небольшими партиями для ежедневного ухода.'
+    description: 'Питательный крем небольшими партиями для ежедневного ухода.',
+    accent: '✨'
   },
   {
     id: 'eco-clean',
@@ -25,8 +39,11 @@ export const products = [
     brand: 'Чистый Дом',
     category: 'Эко-дом',
     price: 2490,
+    rating: 4.8,
+    cashback: 249,
     tag: 'повторный спрос',
-    description: 'Стартовый набор для кухни и ванной без агрессивной химии.'
+    description: 'Стартовый набор для кухни и ванной без агрессивной химии.',
+    accent: '🌿'
   },
   {
     id: 'candle-forest',
@@ -34,8 +51,11 @@ export const products = [
     brand: 'Мастерская Тепла',
     category: 'Дом и уют',
     price: 1290,
+    rating: 5,
+    cashback: 129,
     tag: 'ручная работа',
-    description: 'Ароматическая свеча из натурального воска в крафтовой упаковке.'
+    description: 'Ароматическая свеча из натурального воска в крафтовой упаковке.',
+    accent: '🕯️'
   },
   {
     id: 'tea-balance',
@@ -43,21 +63,135 @@ export const products = [
     brand: 'Травы Севера',
     category: 'Чай и полезные продукты',
     price: 690,
+    rating: 4.7,
+    cashback: 69,
     tag: 'ежемесячная покупка',
-    description: 'Сбор трав для спокойного вечернего ритуала.'
+    description: 'Сбор трав для спокойного вечернего ритуала.',
+    accent: '🍵'
+  },
+  {
+    id: 'pet-care',
+    name: 'Бальзам для лап Paw Care',
+    brand: 'Лапки Дома',
+    category: 'Товары для животных',
+    price: 790,
+    rating: 4.9,
+    cashback: 79,
+    tag: 'сезонный спрос',
+    description: 'Защитный бальзам для лап после прогулок, соли и холода.',
+    accent: '🐾'
+  },
+  {
+    id: 'gift-box',
+    name: 'Подарочный набор Local Love',
+    brand: 'Подарки Рядом',
+    category: 'Подарки',
+    price: 3490,
+    rating: 4.9,
+    cashback: 349,
+    tag: 'подарочная подборка',
+    description: 'Готовый набор от локальных мастеров для красивого подарка.',
+    accent: '🎁'
   }
 ];
 
+export const brands = [
+  {
+    id: 'north-lab',
+    name: 'Северная Лаборатория',
+    city: 'Вологда',
+    category: 'Косметика',
+    orders: 1280,
+    rating: 4.9,
+    description: 'Локальная лаборатория натурального ухода небольшими партиями.',
+    badge: 'локальный уход'
+  },
+  {
+    id: 'clean-home',
+    name: 'Чистый Дом',
+    city: 'Ярославль',
+    category: 'Эко-дом',
+    orders: 2140,
+    rating: 4.8,
+    description: 'Безопасные средства для быта и повторных покупок семьи.',
+    badge: 'повторный спрос'
+  },
+  {
+    id: 'warm-workshop',
+    name: 'Мастерская Тепла',
+    city: 'Кострома',
+    category: 'Дом и уют',
+    orders: 740,
+    rating: 5,
+    description: 'Свечи, ароматы и предметы уюта ручной работы.',
+    badge: 'ручная работа'
+  },
+  {
+    id: 'north-herbs',
+    name: 'Травы Севера',
+    city: 'Архангельск',
+    category: 'Чай и полезные продукты',
+    orders: 1620,
+    rating: 4.7,
+    description: 'Травяные сборы, чайные ритуалы и натуральные продукты.',
+    badge: 'полезные продукты'
+  }
+];
+
+export const platformStats = [
+  { label: 'комиссия с успешной продажи', value: '20%' },
+  { label: 'уходит продавцу', value: '80%' },
+  { label: 'реферальный фонд', value: '10%' },
+  { label: 'подписка продавца с 3-го месяца', value: '1490 ₽' }
+];
+
+export const buyerBenefits = [
+  'Качественные товары от локальных брендов и малых производств',
+  'Защита заказа, история покупок и прозрачные условия возврата',
+  'Бонусы, кэшбэк и участие в акциях внутри платформы',
+  'Повторные покупки без поиска продавца в мессенджерах'
+];
+
+export const sellerBenefits = [
+  'Первые 2 месяца без подписки — можно проверить спрос',
+  '20% комиссия только с успешной продажи, без оплаты за клики и показы',
+  'Партнёрская сеть помогает продвигать товары через рекомендации',
+  'Кабинет продавца: товары, заказы, финансы, подписка и аналитика'
+];
+
+export const partnerBenefits = [
+  'Доход начисляется только с подтверждённого товарооборота',
+  'Партнёр не обязан привлекать именно клиентов — он строит оборот',
+  '6 линий выплат и квалификации по сильным независимым веткам',
+  'Личная ссылка, витрина, структура, начисления и статусный прогресс'
+];
+
 export const statuses = [
-  { name: 'Ассоциат', turnover: 'Регистрация', branches: 'Без условий' },
-  { name: 'Партнёр', turnover: '5 000 ₽ личной активности', branches: '1 линия' },
-  { name: 'Партнёр Silver', turnover: '100 000 ₽', branches: '2 активные ветки' },
-  { name: 'Партнёр Gold', turnover: '300 000 ₽', branches: '2 ветки Партнёр' },
-  { name: 'Лидер', turnover: '1 000 000 ₽', branches: '2 ветки Партнёр Gold' },
-  { name: 'Лидер Silver', turnover: '2 500 000 ₽', branches: '2 ветки Лидер + 1 Партнёр Gold' },
-  { name: 'Лидер Gold', turnover: '5 000 000 ₽', branches: '2 ветки Лидер Silver + 1 Лидер' },
-  { name: 'Амбассадор', turnover: '10 000 000 ₽', branches: '2 ветки Лидер Gold + 2 Лидер' },
-  { name: 'Амбассадор Gold', turnover: '20 000 000 ₽', branches: '2 ветки Амбассадор + 2 Лидер Gold' },
-  { name: 'Амбассадор Platinum', turnover: '50 000 000 ₽', branches: '2 ветки Амбассадор Gold + 2 Амбассадор' },
-  { name: 'Президент', turnover: '100 000 000 ₽', branches: '2 ветки Амбассадор Platinum + 3 Лидер Gold' }
+  { name: 'Ассоциат', turnover: 'Регистрация', branches: 'Без условий', pool: '—' },
+  { name: 'Партнёр', turnover: '5 000 ₽ личной активности', branches: '1 линия', pool: '—' },
+  { name: 'Партнёр Silver', turnover: '100 000 ₽', branches: '2 активные ветки', pool: '0.25 доли' },
+  { name: 'Партнёр Gold', turnover: '300 000 ₽', branches: '2 ветки Партнёр', pool: '0.5 доли' },
+  { name: 'Лидер', turnover: '1 000 000 ₽', branches: '2 ветки Партнёр Gold', pool: '1 доля' },
+  { name: 'Лидер Silver', turnover: '2 500 000 ₽', branches: '2 ветки Лидер + 1 Партнёр Gold', pool: '2 доли' },
+  { name: 'Лидер Gold', turnover: '5 000 000 ₽', branches: '2 ветки Лидер Silver + 1 Лидер', pool: '3 доли' },
+  { name: 'Амбассадор', turnover: '10 000 000 ₽', branches: '2 ветки Лидер Gold + 2 Лидер', pool: '5 долей' },
+  { name: 'Амбассадор Gold', turnover: '20 000 000 ₽', branches: '2 ветки Амбассадор + 2 Лидер Gold', pool: '8 долей' },
+  { name: 'Амбассадор Platinum', turnover: '50 000 000 ₽', branches: '2 ветки Амбассадор Gold + 2 Амбассадор', pool: '12 долей' },
+  { name: 'Президент', turnover: '100 000 000 ₽', branches: '2 ветки Амбассадор Platinum + 3 Лидер Gold', pool: '20 долей' },
+  { name: 'Президент 1 Бриллиант', turnover: '200 000 000 ₽', branches: '1 президентская ветка + 6 от Лидер Gold', pool: '30 долей' },
+  { name: 'Президент 3 Бриллианта', turnover: '700 000 000 ₽', branches: '3 президентские ветки + 4 от Амбассадор', pool: '60 долей' }
+];
+
+export const dashboardMetrics = [
+  { label: 'Оборот структуры', value: '14 800 000 ₽', delta: '+18% за период' },
+  { label: 'Начисления в ожидании', value: '286 400 ₽', delta: 'после срока возврата' },
+  { label: 'Активные ветки', value: '7', delta: '4 квалификационные' },
+  { label: 'Текущий статус', value: 'Амбассадор', delta: 'до Gold: 5.2 млн ₽' }
+];
+
+export const sellerDashboardMetrics = [
+  { label: 'Продажи месяца', value: '842 000 ₽', delta: '128 заказов' },
+  { label: 'К выплате продавцу', value: '673 600 ₽', delta: '80% после комиссии' },
+  { label: 'Подписка', value: '1490 ₽', delta: 'активна до 30 числа' },
+  { label: 'Рейтинг бренда', value: '4.9', delta: 'на основе отзывов' }
 ];
