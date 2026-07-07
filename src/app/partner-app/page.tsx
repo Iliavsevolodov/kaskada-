@@ -1,3 +1,4 @@
+import { HiOutlineCurrencyRuble, HiOutlineLink, HiOutlineTrophy, HiOutlineUserGroup } from 'react-icons/hi2';
 import { MobileShell } from '@/components/MobileShell';
 
 export default function PartnerAppPage() {
@@ -9,10 +10,10 @@ export default function PartnerAppPage() {
         <p className="mt-2 text-sm text-cream/70">до следующего статуса: 5.2 млн ₽</p>
       </div>
       <div className="mt-5 grid grid-cols-2 gap-3">
-        <AppTile icon="🔗" title="Ссылка" text="скопировать" />
-        <AppTile icon="👥" title="Линии" text="6 уровней" />
-        <AppTile icon="💰" title="Начисления" text="286 400 ₽" />
-        <AppTile icon="🏆" title="Статус" text="Амбассадор" />
+        <AppTile icon={<HiOutlineLink />} title="Ссылка" text="скопировать" />
+        <AppTile icon={<HiOutlineUserGroup />} title="Линии" text="6 уровней" />
+        <AppTile icon={<HiOutlineCurrencyRuble />} title="Начисления" text="286 400 ₽" />
+        <AppTile icon={<HiOutlineTrophy />} title="Статус" text="Амбассадор" />
       </div>
       <div className="mt-6 rounded-[1.8rem] bg-white/70 p-5 shadow-soft">
         <h2 className="text-2xl font-black">Ветки</h2>
@@ -27,6 +28,6 @@ export default function PartnerAppPage() {
   );
 }
 
-function AppTile({ icon, title, text }: { icon: string; title: string; text: string }) {
-  return <div className="card-glass rounded-[1.5rem] p-4 shadow-soft"><p className="text-2xl">{icon}</p><p className="mt-2 font-black">{title}</p><p className="text-sm text-neutral-500">{text}</p></div>;
+function AppTile({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
+  return <div className="card-glass rounded-[1.5rem] p-4 shadow-soft"><p className="text-2xl text-neutral-700">{icon}</p><p className="mt-2 font-black">{title}</p><p className="text-sm text-neutral-500">{text}</p></div>;
 }
