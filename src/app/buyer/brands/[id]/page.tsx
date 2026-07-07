@@ -13,10 +13,10 @@ export default function BuyerBrandDetailPage({ params }: { params: { id: string 
 
   return (
     <main className="min-h-screen pb-24 text-graphite">
-      <header className="sticky top-0 z-50 border-b border-graphite/8 bg-white/95 px-6 py-4 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-graphite/10 bg-white/95 px-6 py-4 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
           <a className="flex items-center gap-3" href="/kaskada-/buyer/brands/">
-            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-graphite text-xs font-black text-gold">K</span>
+            <span className="flex h-10 w-10 items-center justify-center bg-graphite text-xs font-black text-gold">K</span>
             <div>
               <p className="text-base font-black leading-none">Каскада Маркет</p>
               <p className="section-label mt-1 text-[10px] font-bold text-neutral-500">витрина бренда</p>
@@ -27,20 +27,20 @@ export default function BuyerBrandDetailPage({ params }: { params: { id: string 
       </header>
 
       <section className="mx-auto max-w-7xl px-6 py-8">
-        <div className="overflow-hidden rounded-[1.9rem] border border-graphite/8 bg-white shadow-soft">
+        <div className="overflow-hidden border border-graphite/10 bg-white shadow-soft">
           <div className="relative h-[340px] overflow-hidden">
             <img alt={brand.name} className="h-full w-full object-cover" src={brand.cover} />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/72 via-black/25 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div className="flex items-center gap-4">
-                <img alt={brand.name} className="h-20 w-20 rounded-full border-4 border-white object-cover" src={brand.logo} />
+                <img alt={brand.name} className="h-20 w-20 border-4 border-white object-cover" src={brand.logo} />
                 <div className="text-white">
                   <p className="section-label text-[10px] font-bold text-[#f6d44d]">{brand.category}</p>
                   <h1 className="display-font mt-2 text-4xl font-semibold">{brand.name}</h1>
                   <p className="mt-2 text-sm text-white/78">{brand.tagline}</p>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-3 rounded-[1.2rem] bg-white/12 p-3 text-center text-white backdrop-blur-sm">
+              <div className="grid grid-cols-3 gap-3 border border-white/25 bg-white/12 p-3 text-center text-white backdrop-blur-sm">
                 <div><p className="text-xl font-black">{brand.rating}</p><p className="text-xs text-white/70">рейтинг</p></div>
                 <div><p className="text-xl font-black">{brand.products}</p><p className="text-xs text-white/70">товаров</p></div>
                 <div><p className="text-xl font-black">{brand.followers}</p><p className="text-xs text-white/70">подписчики</p></div>
