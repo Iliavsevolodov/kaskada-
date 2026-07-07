@@ -17,7 +17,10 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top left, rgba(201, 162, 77, 0.16), transparent 34%), var(--background);
+  background:
+    radial-gradient(circle at top left, rgba(201, 162, 77, 0.18), transparent 34%),
+    radial-gradient(circle at 80% 10%, rgba(38, 68, 55, 0.12), transparent 28%),
+    var(--background);
   color: var(--foreground);
 }
 
@@ -35,4 +38,61 @@ body {
 .section-label {
   letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+.hover-lift {
+  transform: translateY(0) scale(1);
+  transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 28px 90px rgba(21, 21, 21, 0.18);
+  border-color: rgba(201, 162, 77, 0.42);
+}
+
+.product-visual {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-visual::before {
+  content: '';
+  position: absolute;
+  inset: -40%;
+  background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.72), transparent 65%);
+  transform: translateX(-50%) rotate(10deg);
+  animation: shimmer 4.8s ease-in-out infinite;
+}
+
+.float-soft {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+.pulse-soft {
+  animation: pulseSoft 2.8s ease-in-out infinite;
+}
+
+.reveal-up {
+  animation: revealUp 620ms ease both;
+}
+
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseSoft {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.04); opacity: 0.86; }
+}
+
+@keyframes shimmer {
+  0%, 55% { transform: translateX(-70%) rotate(10deg); }
+  100% { transform: translateX(70%) rotate(10deg); }
+}
+
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
 }
