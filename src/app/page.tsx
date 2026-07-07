@@ -10,66 +10,64 @@ export default function HomePage() {
     <main className="min-h-screen text-graphite">
       <SiteHeader />
 
-      <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.04fr_0.96fr] lg:items-center">
+      <section className="mx-auto grid max-w-7xl gap-8 px-6 py-14 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
         <div className="reveal-up">
-          <div className="mb-6 flex flex-wrap gap-3">
-            <span className="premium-chip">⚡ wow marketplace experience</span>
-            <span className="premium-chip">📱 mobile-first architecture</span>
-            <span className="premium-chip">🤝 referral commerce</span>
+          <div className="mb-5 flex flex-wrap gap-2.5">
+            <span className="premium-chip">Marketplace</span>
+            <span className="premium-chip">Referral model</span>
+            <span className="premium-chip">Mobile-ready</span>
           </div>
-          <p className="section-label mb-5 text-sm font-bold text-forest">Premium Local Marketplace</p>
-          <h1 className="max-w-5xl text-5xl font-black leading-[0.9] tracking-tight md:text-7xl">
-            Платформа, где <span className="text-gold">покупки</span> выглядят стильно, а <span className="text-forest">рекомендации</span> превращаются в доход.
+          <p className="section-label mb-4 text-[11px] font-bold text-neutral-500">Каскада Маркет</p>
+          <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-[3.5rem]">
+            Аккуратная платформа для локальных брендов, покупок и партнёрской модели.
           </h1>
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-neutral-700">
-            Каскада Маркет объединяет локальные бренды, красивую витрину, мобильный интерфейс и прозрачную экономику. Это уже не просто сайт, а основа для настоящей коммерческой экосистемы.
+          <p className="mt-5 max-w-2xl text-base leading-8 text-neutral-600 md:text-lg">
+            Каскада Маркет объединяет каталог, бренды, приложение и прозрачную экономику в одном минималистичном интерфейсе. Платформа проектируется как продукт, а не просто как сайт.
           </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <a className="premium-button bg-gold text-graphite" href="/kaskada-/catalog/">Смотреть каталог</a>
-            <a className="premium-button bg-graphite text-cream" href="/kaskada-/buyer-app/">Открыть приложение</a>
-            <a className="premium-button border border-graphite/15 bg-white/70 text-graphite" href="/kaskada-/seller-app/">Для брендов</a>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <a className="premium-button bg-graphite text-cream" href="/kaskada-/catalog/">Открыть каталог</a>
+            <a className="premium-button border border-graphite/10 bg-white text-graphite" href="/kaskada-/buyer-app/">Режим приложения</a>
+            <a className="premium-button border border-graphite/10 bg-white text-graphite" href="/kaskada-/seller-app/">Для продавцов</a>
           </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          <div className="mt-7 grid gap-3 sm:grid-cols-3">
             <Metric value="20%" label="комиссия платформы" />
             <Metric value="6" label="линий выплат" />
             <Metric value="1490 ₽" label="подписка продавца" />
           </div>
         </div>
 
-        <div className="card-glass hover-lift reveal-up relative overflow-hidden rounded-[2.5rem] p-5 shadow-soft">
-          <div className="float-soft absolute right-10 top-10 h-28 w-28 rounded-full bg-gold/30 blur-3xl" />
-          <div className="pulse-soft absolute bottom-10 left-10 h-32 w-32 rounded-full bg-forest/20 blur-3xl" />
-          <div className="grid gap-4 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="metal-panel rounded-[2rem] p-6 text-cream">
-              <p className="section-label text-xs font-bold text-gold">Финансовая модель</p>
-              <h2 className="mt-3 text-5xl font-black">20 / 10 / 10</h2>
-              <p className="mt-3 leading-7 text-cream/70">20% комиссия: 10% в реферальную сеть и 10% в фонд развития платформы.</p>
-              <div className="mt-6 grid grid-cols-3 gap-3 text-center text-3xl">
-                <span className="float-soft rounded-2xl bg-white/10 p-4">🛒</span>
-                <span className="float-soft rounded-2xl bg-white/10 p-4">🏪</span>
-                <span className="float-soft rounded-2xl bg-white/10 p-4">🤝</span>
+        <div className="card-glass reveal-up rounded-[1.9rem] p-4 shadow-soft">
+          <div className="grid gap-4 lg:grid-cols-[1.04fr_0.96fr]">
+            <div className="metal-panel rounded-[1.6rem] p-5 text-cream">
+              <p className="section-label text-[10px] font-bold text-gold">Модель платформы</p>
+              <h2 className="mt-2 text-4xl font-bold">20 / 10 / 10</h2>
+              <p className="mt-3 text-sm leading-7 text-cream/70">20% комиссия: 10% в реферальную сеть и 10% в фонд платформы.</p>
+              <div className="mt-5 grid grid-cols-3 gap-2.5 text-center text-2xl">
+                <span className="rounded-2xl bg-white/10 p-3">🛒</span>
+                <span className="rounded-2xl bg-white/10 p-3">🏪</span>
+                <span className="rounded-2xl bg-white/10 p-3">🤝</span>
               </div>
-              <div className="mt-6 rounded-[1.4rem] bg-white/10 p-4">
-                <p className="text-sm text-cream/60">Сценарий</p>
-                <p className="mt-1 text-xl font-black">Маркетплейс + приложение + партнёрская сеть</p>
+              <div className="mt-5 rounded-[1.1rem] bg-white/8 p-4">
+                <p className="text-[11px] uppercase tracking-[0.16em] text-cream/55">Подход</p>
+                <p className="mt-1 text-sm font-semibold">Маркетплейс, кабинет и приложение в одной системе.</p>
               </div>
             </div>
-            <div className="space-y-4">
-              <div className="card-glass rounded-[1.8rem] p-5">
-                <p className="section-label text-[11px] font-bold text-gold">Buyer app</p>
-                <div className="mt-4 rounded-[1.6rem] bg-white/85 p-4">
+            <div className="space-y-3">
+              <div className="rounded-[1.4rem] border border-graphite/8 bg-white/80 p-4">
+                <p className="section-label text-[10px] font-bold text-neutral-500">Buyer app</p>
+                <div className="mt-3 rounded-[1.2rem] bg-cream p-4">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-sm font-bold text-neutral-500">Бонусы</p>
-                      <p className="text-3xl font-black">1 240 ₽</p>
+                      <p className="text-[12px] font-semibold text-neutral-500">Бонусы</p>
+                      <p className="text-2xl font-bold">1 240 ₽</p>
                     </div>
-                    <span className="rounded-2xl bg-gold px-3 py-2 text-lg">🛍</span>
+                    <span className="rounded-2xl bg-white px-3 py-2 text-base">🛍</span>
                   </div>
-                  <div className="mt-4 grid grid-cols-2 gap-3 text-sm font-bold">
-                    <div className="rounded-2xl bg-cream p-3">Избранное</div>
-                    <div className="rounded-2xl bg-cream p-3">Заказы</div>
-                    <div className="rounded-2xl bg-cream p-3">Акции</div>
-                    <div className="rounded-2xl bg-cream p-3">Бренды</div>
+                  <div className="mt-4 grid grid-cols-2 gap-2 text-[12px] font-semibold text-neutral-700">
+                    <div className="rounded-2xl bg-white px-3 py-2.5">Заказы</div>
+                    <div className="rounded-2xl bg-white px-3 py-2.5">Бренды</div>
+                    <div className="rounded-2xl bg-white px-3 py-2.5">Акции</div>
+                    <div className="rounded-2xl bg-white px-3 py-2.5">Избранное</div>
                   </div>
                 </div>
               </div>
@@ -77,7 +75,7 @@ export default function HomePage() {
                 <StatTile value="80%" label="продавцу" />
                 <StatTile value="10%" label="реферальный фонд" />
                 <StatTile value="10%" label="платформа" />
-                <StatTile value="4 роли" label="в одной системе" />
+                <StatTile value="4 роли" label="одна архитектура" />
               </div>
             </div>
           </div>
@@ -86,64 +84,64 @@ export default function HomePage() {
 
       <RoleExperienceSwitcher />
 
-      <section className="mx-auto max-w-7xl px-6 py-12">
-        <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <section className="mx-auto max-w-7xl px-6 py-10">
+        <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="section-label text-xs font-bold text-gold">Каталог</p>
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">Товары, которые хочется открыть</h2>
-            <p className="mt-3 max-w-2xl text-lg leading-8 text-neutral-700">Карточки стали визуальнее, премиальнее и лучше подходят под будущий мобильный маркетплейс.</p>
+            <p className="section-label text-[11px] font-bold text-neutral-500">Каталог</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-[2rem]">Товары в аккуратной продуктовой подаче</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-7 text-neutral-600">Меньше визуального шума, больше ясности и удобства просмотра.</p>
           </div>
-          <a className="premium-button border border-graphite/15 bg-white/70 text-graphite" href="/kaskada-/catalog/">Весь каталог</a>
+          <a className="premium-button border border-graphite/10 bg-white text-graphite" href="/kaskada-/catalog/">Весь каталог</a>
         </div>
-        <div className="mt-7 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => <ProductCard product={product} key={product.id} />)}
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-12">
-        <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <section className="mx-auto max-w-7xl px-6 py-10">
+        <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="section-label text-xs font-bold text-gold">Бренды</p>
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">Локальные производители с сильной подачей</h2>
-            <p className="mt-3 max-w-2xl text-lg leading-8 text-neutral-700">Бренд на платформе должен выглядеть не как сухая карточка, а как полноценная красивая витрина.</p>
+            <p className="section-label text-[11px] font-bold text-neutral-500">Бренды</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-[2rem]">Локальные производители в чистом интерфейсе</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-7 text-neutral-600">Карточки брендов стали спокойнее и ближе к стандартам сильных современных интерфейсов.</p>
           </div>
-          <a className="premium-button border border-graphite/15 bg-white/70 text-graphite" href="/kaskada-/brands/">Открыть бренды</a>
+          <a className="premium-button border border-graphite/10 bg-white text-graphite" href="/kaskada-/brands/">Все бренды</a>
         </div>
-        <div className="mt-7 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {brands.map((brand) => <BrandCard brand={brand} key={brand.id} />)}
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-12" id="finance">
+      <section className="mx-auto max-w-7xl px-6 py-10" id="finance">
         <EconomyCalculator />
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-12">
-        <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <section className="mx-auto max-w-7xl px-6 py-10">
+        <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="section-label text-xs font-bold text-gold">Квалификации</p>
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">Статусный рост в красивой бизнес-оболочке</h2>
-            <p className="mt-3 max-w-2xl text-lg leading-8 text-neutral-700">Даже маркетинг-план должен визуально ощущаться как дорогой продукт, а не как скучная таблица.</p>
+            <p className="section-label text-[11px] font-bold text-neutral-500">Квалификации</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-[2rem]">Маркетинг-план в чистой структуре</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-7 text-neutral-600">Табличный блок также приведён к более спокойному и зрелому визуальному языку.</p>
           </div>
-          <a className="premium-button border border-graphite/15 bg-white/70 text-graphite" href="/kaskada-/partners/">Партнёрский режим</a>
+          <a className="premium-button border border-graphite/10 bg-white text-graphite" href="/kaskada-/partners/">Партнёрский режим</a>
         </div>
-        <div className="overflow-hidden rounded-[2.2rem] border border-graphite/10 bg-white/75 shadow-soft">
+        <div className="overflow-hidden rounded-[1.7rem] border border-graphite/8 bg-white/82 shadow-soft">
           <table className="w-full min-w-[900px] text-left text-sm">
             <thead className="bg-graphite text-cream">
               <tr>
-                <th className="p-5">Статус</th>
-                <th className="p-5">Оборот</th>
-                <th className="p-5">Ветки</th>
-                <th className="p-5">Пул</th>
+                <th className="p-4">Статус</th>
+                <th className="p-4">Оборот</th>
+                <th className="p-4">Ветки</th>
+                <th className="p-4">Пул</th>
               </tr>
             </thead>
             <tbody>
               {statuses.slice(0, 10).map((status) => (
-                <tr className="border-t border-graphite/10" key={status.name}>
-                  <td className="p-5 font-black">{status.name}</td>
-                  <td className="p-5">{status.turnover}</td>
-                  <td className="p-5">{status.branches}</td>
-                  <td className="p-5">{status.pool}</td>
+                <tr className="border-t border-graphite/8" key={status.name}>
+                  <td className="p-4 font-semibold">{status.name}</td>
+                  <td className="p-4">{status.turnover}</td>
+                  <td className="p-4">{status.branches}</td>
+                  <td className="p-4">{status.pool}</td>
                 </tr>
               ))}
             </tbody>
@@ -157,17 +155,17 @@ export default function HomePage() {
 function Metric({ value, label }: { value: string; label: string }) {
   return (
     <div className="stat-tile hover-lift">
-      <p className="text-3xl font-black">{value}</p>
-      <p className="mt-1 text-sm font-bold text-neutral-600">{label}</p>
+      <p className="text-2xl font-bold">{value}</p>
+      <p className="mt-1 text-[12px] font-medium text-neutral-500">{label}</p>
     </div>
   );
 }
 
 function StatTile({ value, label }: { value: string; label: string }) {
   return (
-    <div className="rounded-[1.5rem] bg-white/80 p-4 shadow-soft">
-      <p className="text-2xl font-black">{value}</p>
-      <p className="mt-1 text-sm font-bold text-neutral-500">{label}</p>
+    <div className="rounded-[1.1rem] border border-graphite/8 bg-white/82 p-4 shadow-soft">
+      <p className="text-xl font-bold">{value}</p>
+      <p className="mt-1 text-[12px] font-medium text-neutral-500">{label}</p>
     </div>
   );
 }
