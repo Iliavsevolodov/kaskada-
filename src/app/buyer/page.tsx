@@ -11,7 +11,7 @@ export default function BuyerPage() {
       <header className="sticky top-0 z-50 border-b border-[#d8c3a8]/70 bg-[#fffaf2]/92 px-6 py-4 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
           <a className="flex items-center gap-3" href="/kaskada-/">
-            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#2a1b12] text-xs font-black text-[#f4d27b] shadow-sm">K</span>
+            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#2a1b12] text-xs font-black text-[#f4d27b] shadow-sm">К</span>
             <div>
               <p className="text-base font-black leading-none">Каскада Маркет</p>
               <p className="section-label mt-1 text-[10px] font-bold text-[#9c7a55]">тёплый маркетплейс</p>
@@ -35,7 +35,7 @@ export default function BuyerPage() {
               <img alt={slide.title} className="image-cover opacity-78" src={slide.image} />
               <div className="absolute inset-0 bg-gradient-to-r from-[#2a1b12]/82 via-[#2a1b12]/32 to-transparent" />
               <div className="absolute bottom-0 left-0 max-w-2xl p-8">
-                <p className="section-label text-[11px] font-bold text-[#f4d27b]">Kaskada warm store</p>
+                <p className="section-label text-[11px] font-bold text-[#f4d27b]">Магазин Каскада</p>
                 <h1 className="display-font mt-3 text-4xl font-semibold leading-tight md:text-5xl">{slide.title}</h1>
                 <p className="mt-4 max-w-xl text-sm leading-7 text-white/82">{slide.subtitle}</p>
                 <span className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#f4d27b] px-5 py-3 text-sm font-black text-[#2a1b12]">Смотреть <HiArrowRight /></span>
