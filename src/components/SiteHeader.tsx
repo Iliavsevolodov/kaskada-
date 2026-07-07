@@ -5,10 +5,10 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-graphite/8 bg-cream/82 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
         <a className="flex items-center gap-3" href="/kaskada-/">
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-graphite text-xs font-black text-gold">K</span>
+          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-graphite text-xs font-black text-gold">К</span>
           <div>
             <p className="text-base font-black leading-none">Каскада Маркет</p>
-            <p className="section-label mt-1 text-[10px] font-bold text-neutral-500">marketplace platform</p>
+            <p className="section-label mt-1 text-[10px] font-bold text-neutral-500">платформа покупок</p>
           </div>
         </a>
         <nav className="hidden items-center gap-1 rounded-full border border-graphite/8 bg-white/72 p-1.5 md:flex">
