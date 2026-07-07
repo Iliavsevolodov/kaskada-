@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f2e8;
+  --foreground: #151515;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, rgba(201, 162, 77, 0.16), transparent 34%), var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: #c9a24d;
+  color: #151515;
+}
+
+.card-glass {
+  border: 1px solid rgba(21, 21, 21, 0.08);
+  background: rgba(255, 255, 255, 0.64);
+  backdrop-filter: blur(18px);
+}
+
+.section-label {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
