@@ -1,6 +1,19 @@
 import type { Metadata, Viewport } from 'next';
+import { Manrope, Playfair_Display } from 'next/font/google';
 import { appConfig } from '@/lib/appConfig';
 import './globals.css';
+
+const manrope = Manrope({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-sans',
+  display: 'swap'
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-display',
+  display: 'swap'
+});
 
 export const metadata: Metadata = {
   title: appConfig.name,
@@ -24,7 +37,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ru">
+    <html lang="ru" className={`${manrope.variable} ${playfair.variable}`}>
       <body>{children}</body>
     </html>
   );
