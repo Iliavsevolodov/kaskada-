@@ -1,3 +1,4 @@
+import { EconomyCalculator } from '@/components/EconomyCalculator';
 import { categories, products, statuses } from '@/lib/data';
 import { calculateOrderEconomy, money, referralRates } from '@/lib/finance';
 
@@ -118,17 +119,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-12" id="finance">
-        <p className="section-label text-xs font-bold text-gold">Финансовая модель</p>
-        <h2 className="mt-3 text-4xl font-black">Платформа не должна уходить в минус</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-          {economy.platformItems.map((item) => (
-            <div className="card-glass rounded-[1.4rem] p-5 shadow-soft" key={item.name}>
-              <p className="text-sm font-bold text-neutral-600">{item.name}</p>
-              <p className="mt-2 text-2xl font-black">{item.rate * 100}%</p>
-              <p className="text-sm text-neutral-500">{money(item.amount)}</p>
-            </div>
-          ))}
-        </div>
+        <EconomyCalculator />
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-12">
