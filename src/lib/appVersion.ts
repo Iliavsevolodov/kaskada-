@@ -1,2 +1,2 @@
-export const appVersion = 'v0.2.4';
-export const appVersionName = 'Mobile Ready Architecture';
+export const appVersion = 'v0.2.5';
+export const appVersionName = 'Mobile App Role Screens';
