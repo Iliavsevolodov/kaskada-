@@ -1,2 +1,2 @@
-export const appVersion = 'v0.2.7';
-export const appVersionName = 'Refined Minimal Interface';
+export const appVersion = 'v0.2.8';
+export const appVersionName = 'Fashion Marketplace Interface';
