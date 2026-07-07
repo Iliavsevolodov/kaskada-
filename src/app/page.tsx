@@ -1,5 +1,5 @@
 import { categories, products, statuses } from '@/lib/data';
-import { calculateOrderEconomy, money, platformFundRates, referralRates } from '@/lib/finance';
+import { calculateOrderEconomy, money, referralRates } from '@/lib/finance';
 
 const economy = calculateOrderEconomy(10000);
 
@@ -121,7 +121,7 @@ export default function HomePage() {
         <p className="section-label text-xs font-bold text-gold">Финансовая модель</p>
         <h2 className="mt-3 text-4xl font-black">Платформа не должна уходить в минус</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-          {platformFundRates.map((item) => (
+          {economy.platformItems.map((item) => (
             <div className="card-glass rounded-[1.4rem] p-5 shadow-soft" key={item.name}>
               <p className="text-sm font-bold text-neutral-600">{item.name}</p>
               <p className="mt-2 text-2xl font-black">{item.rate * 100}%</p>
