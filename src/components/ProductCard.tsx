@@ -15,7 +15,7 @@ export type ProductCardData = {
 
 export function ProductCard({ product }: { product: ProductCardData }) {
   return (
-    <article className="card-glass hover-lift reveal-up rounded-[1.8rem] p-5 shadow-soft">
+    <a className="card-glass hover-lift reveal-up block rounded-[1.8rem] p-5 shadow-soft" href={`/kaskada-/products/${product.id}/`}>
       <div className="product-visual mb-5 flex h-44 items-center justify-center rounded-[1.4rem] bg-gradient-to-br from-white via-sand to-cream text-6xl">
         <span className="float-soft relative z-10">{product.accent}</span>
       </div>
@@ -30,6 +30,7 @@ export function ProductCard({ product }: { product: ProductCardData }) {
         </div>
         <span className="rounded-full bg-forest px-3 py-2 text-xs font-bold text-cream">★ {product.rating}</span>
       </div>
-    </article>
+      <span className="mt-5 inline-flex rounded-full bg-graphite px-4 py-3 text-sm font-black text-cream">Открыть товар</span>
+    </a>
   );
 }
