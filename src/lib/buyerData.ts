@@ -47,3 +47,26 @@ export const buyerHeroSlides = [
   { title: 'Beauty & Home подборка', subtitle: 'Красивые товары для ухода, уюта и повседневных ритуалов.', href: '/kaskada-/buyer/#new', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80' },
   { title: 'Подарки рядом', subtitle: 'Готовые наборы и ручная работа от локальных мастеров.', href: '/kaskada-/buyer/#gift', image: 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=1400&q=80' }
 ];
+
+export const buyerStories = [
+  { title: 'Новинки', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=300&q=80' },
+  { title: 'Хиты дома', image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=300&q=80' },
+  { title: 'Уход', image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=300&q=80' },
+  { title: 'Подарки', image: 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=300&q=80' },
+  { title: 'Для питомцев', image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=300&q=80' },
+  { title: 'Чайный ритуал', image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=300&q=80' }
+];
+
+export const buyerVideos = [
+  { title: 'Распаковка бьюти-набора', brand: 'Aurum Skin', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80', duration: '01:24' },
+  { title: 'Обзор набора для дома', brand: 'Чистый Дом', image: 'https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=900&q=80', duration: '02:08' },
+  { title: 'Подарочный бокс крупным планом', brand: 'Подарки Рядом', image: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&q=80', duration: '00:56' }
+];
+
+export const buyerBrands = [
+  { id: 'severnaya-laboratoriya', name: 'Северная Лаборатория', category: 'Косметика', tagline: 'Уход с северным характером', description: 'Локальный бренд ухода с акцентом на натуральные формулы и эстетичную подачу.', cover: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1400&q=80', logo: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=300&q=80', rating: 4.9, products: 12, followers: '18k' },
+  { id: 'chisty-dom', name: 'Чистый Дом', category: 'Дом', tagline: 'Дом без лишней химии', description: 'Практичные товары для уборки, кухни и ванной с понятным ежедневным спросом.', cover: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1400&q=80', logo: 'https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=300&q=80', rating: 4.8, products: 24, followers: '22k' },
+  { id: 'masterskaya-tepla', name: 'Мастерская Тепла', category: 'Уют', tagline: 'Атмосфера, свечи и уют', description: 'Свечи, интерьерные акценты и предметы повседневного комфорта.', cover: 'https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=1400&q=80', logo: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=300&q=80', rating: 5, products: 16, followers: '9k' },
+  { id: 'travy-severa', name: 'Травы Севера', category: 'Чай', tagline: 'Ритуалы вкуса каждый день', description: 'Травяные сборы, чайные сеты и продукты для ежедневных ритуалов.', cover: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=1400&q=80', logo: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=300&q=80', rating: 4.7, products: 19, followers: '11k' },
+  { id: 'podarki-ryadom', name: 'Подарки Рядом', category: 'Подарки', tagline: 'Красивые локальные подарки', description: 'Готовые подарочные решения, наборы и небольшие коллекции ручной работы.', cover: 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=1400&q=80', logo: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=300&q=80', rating: 4.9, products: 14, followers: '13k' }
+];
