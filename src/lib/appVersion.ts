@@ -1,2 +1,2 @@
-export const appVersion = 'v0.2.10';
-export const appVersionName = 'Buyer Storefront Media & Brands';
+export const appVersion = 'v0.2.11';
+export const appVersionName = 'Buyer Sharp Storefront';
