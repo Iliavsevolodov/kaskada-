@@ -15,8 +15,10 @@ export type ProductCardData = {
 
 export function ProductCard({ product }: { product: ProductCardData }) {
   return (
-    <article className="card-glass rounded-[1.8rem] p-5 shadow-soft">
-      <div className="mb-5 flex h-44 items-center justify-center rounded-[1.4rem] bg-gradient-to-br from-white to-sand text-6xl">{product.accent}</div>
+    <article className="card-glass hover-lift reveal-up rounded-[1.8rem] p-5 shadow-soft">
+      <div className="product-visual mb-5 flex h-44 items-center justify-center rounded-[1.4rem] bg-gradient-to-br from-white via-sand to-cream text-6xl">
+        <span className="float-soft relative z-10">{product.accent}</span>
+      </div>
       <p className="text-xs font-black uppercase tracking-[0.18em] text-gold">{product.category}</p>
       <h3 className="mt-2 text-xl font-black">{product.name}</h3>
       <p className="mt-1 text-sm font-bold text-forest">{product.brand}</p>
