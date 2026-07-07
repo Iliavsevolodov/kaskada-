@@ -1,23 +1,24 @@
 export const categories = [
-  'Эко-дом',
+  'Новинки',
+  'Акции',
+  'Скидки',
   'Косметика',
+  'Эко-дом',
   'Дом и уют',
   'Подарки',
-  'Чай и полезные продукты',
+  'Чай и продукты',
   'Товары для животных',
-  'Детские товары',
-  'Ручная работа'
+  'Детские товары'
 ];
 
 export const navigation = [
   { label: 'Каталог', href: '/catalog/' },
   { label: 'Бренды', href: '/brands/' },
-  { label: 'Как работает', href: '/how-it-works/' },
-  { label: 'Покупателям', href: '/buyers/' },
+  { label: 'Новинки', href: '/catalog/#new' },
+  { label: 'Акции', href: '/catalog/#sale' },
   { label: 'Партнёрам', href: '/partners/' },
   { label: 'Продавцам', href: '/sellers/' },
-  { label: 'Маркетинг-план', href: '/marketing-plan/' },
-  { label: 'Кабинет', href: '/dashboard/' }
+  { label: 'Приложение', href: '/buyer-app/' }
 ];
 
 export const products = [
@@ -27,11 +28,13 @@ export const products = [
     brand: 'Северная Лаборатория',
     category: 'Косметика',
     price: 890,
+    oldPrice: 1190,
     rating: 4.9,
     cashback: 89,
-    tag: 'локальный уход',
+    tag: 'new',
+    badge: 'Новинка',
     description: 'Питательный крем небольшими партиями для ежедневного ухода.',
-    accent: '✨'
+    image: 'https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'eco-clean',
@@ -39,11 +42,13 @@ export const products = [
     brand: 'Чистый Дом',
     category: 'Эко-дом',
     price: 2490,
+    oldPrice: 2990,
     rating: 4.8,
     cashback: 249,
-    tag: 'повторный спрос',
+    tag: 'sale',
+    badge: 'Акция',
     description: 'Стартовый набор для кухни и ванной без агрессивной химии.',
-    accent: '🌿'
+    image: 'https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'candle-forest',
@@ -51,23 +56,27 @@ export const products = [
     brand: 'Мастерская Тепла',
     category: 'Дом и уют',
     price: 1290,
+    oldPrice: 1590,
     rating: 5,
     cashback: 129,
-    tag: 'ручная работа',
+    tag: 'home',
+    badge: 'Бестселлер',
     description: 'Ароматическая свеча из натурального воска в крафтовой упаковке.',
-    accent: '🕯️'
+    image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'tea-balance',
     name: 'Травяной чай Баланс',
     brand: 'Травы Севера',
-    category: 'Чай и полезные продукты',
+    category: 'Чай и продукты',
     price: 690,
+    oldPrice: 790,
     rating: 4.7,
     cashback: 69,
-    tag: 'ежемесячная покупка',
+    tag: 'daily',
+    badge: 'Каждый день',
     description: 'Сбор трав для спокойного вечернего ритуала.',
-    accent: '🍵'
+    image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'pet-care',
@@ -75,11 +84,13 @@ export const products = [
     brand: 'Лапки Дома',
     category: 'Товары для животных',
     price: 790,
+    oldPrice: 990,
     rating: 4.9,
     cashback: 79,
-    tag: 'сезонный спрос',
+    tag: 'pets',
+    badge: 'Сезон',
     description: 'Защитный бальзам для лап после прогулок, соли и холода.',
-    accent: '🐾'
+    image: 'https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'gift-box',
@@ -87,11 +98,13 @@ export const products = [
     brand: 'Подарки Рядом',
     category: 'Подарки',
     price: 3490,
+    oldPrice: 4290,
     rating: 4.9,
     cashback: 349,
-    tag: 'подарочная подборка',
+    tag: 'gift',
+    badge: 'Подарок',
     description: 'Готовый набор от локальных мастеров для красивого подарка.',
-    accent: '🎁'
+    image: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&q=80'
   }
 ];
 
@@ -104,7 +117,8 @@ export const brands = [
     orders: 1280,
     rating: 4.9,
     description: 'Локальная лаборатория натурального ухода небольшими партиями.',
-    badge: 'локальный уход'
+    badge: 'локальный уход',
+    image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'clean-home',
@@ -114,7 +128,8 @@ export const brands = [
     orders: 2140,
     rating: 4.8,
     description: 'Безопасные средства для быта и повторных покупок семьи.',
-    badge: 'повторный спрос'
+    badge: 'повторный спрос',
+    image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'warm-workshop',
@@ -124,25 +139,56 @@ export const brands = [
     orders: 740,
     rating: 5,
     description: 'Свечи, ароматы и предметы уюта ручной работы.',
-    badge: 'ручная работа'
+    badge: 'ручная работа',
+    image: 'https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'north-herbs',
     name: 'Травы Севера',
     city: 'Архангельск',
-    category: 'Чай и полезные продукты',
+    category: 'Чай и продукты',
     orders: 1620,
     rating: 4.7,
     description: 'Травяные сборы, чайные ритуалы и натуральные продукты.',
-    badge: 'полезные продукты'
+    badge: 'полезные продукты',
+    image: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=900&q=80'
   }
 ];
 
+export const heroSlides = [
+  {
+    title: 'Новая витрина локальных брендов',
+    subtitle: 'Косметика, дом, подарки и полезные продукты в едином аккуратном интерфейсе.',
+    href: '/kaskada-/catalog/',
+    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Акции недели',
+    subtitle: 'Подборки товаров с повторным спросом и бонусным оборотом.',
+    href: '/kaskada-/catalog/#sale',
+    image: 'https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=1400&q=80'
+  },
+  {
+    title: 'Подарки от локальных мастеров',
+    subtitle: 'Готовые наборы и тематические решения для красивого повода.',
+    href: '/kaskada-/catalog/#gift',
+    image: 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=1400&q=80'
+  }
+];
+
+export const thematicFeeds = [
+  { title: 'Новинки', id: 'new', subtitle: 'Свежие товары и новые бренды', filter: 'new' },
+  { title: 'Акции', id: 'sale', subtitle: 'Выгодные предложения недели', filter: 'sale' },
+  { title: 'Скидки', id: 'discounts', subtitle: 'Товары с заметной выгодой', filter: 'sale' },
+  { title: 'Для дома', id: 'home', subtitle: 'Уют, чистота и повседневный спрос', filter: 'home' },
+  { title: 'Подарки', id: 'gift', subtitle: 'Готовые решения для красивого повода', filter: 'gift' }
+];
+
 export const platformStats = [
-  { label: 'комиссия с успешной продажи', value: '20%' },
+  { label: 'комиссия с продажи', value: '20%' },
   { label: 'уходит продавцу', value: '80%' },
   { label: 'реферальный фонд', value: '10%' },
-  { label: 'подписка продавца с 3-го месяца', value: '1490 ₽' }
+  { label: 'подписка продавца', value: '1490 ₽' }
 ];
 
 export const buyerBenefits = [
