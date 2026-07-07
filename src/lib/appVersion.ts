@@ -1,2 +1,2 @@
-export const appVersion = 'v0.2.13';
-export const appVersionName = 'Русский тёплый маркетплейс';
+export const appVersion = 'v0.2.14';
+export const appVersionName = 'Русский покупательский магазин';
