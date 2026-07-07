@@ -10,7 +10,7 @@ export default function HomePage() {
       <SiteHeader />
 
       <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-        <div>
+        <div className="reveal-up">
           <p className="section-label mb-5 text-sm font-bold text-forest">Premium Local Marketplace</p>
           <h1 className="max-w-5xl text-5xl font-black leading-[0.92] tracking-tight md:text-7xl">
             Маркетплейс локальных брендов с системой рекомендаций.
@@ -19,19 +19,26 @@ export default function HomePage() {
             Каскада Маркет объединяет покупателей, продавцов и партнёров в одной коммерческой платформе: товары, бренды, заказы, оборот, кабинеты и прозрачная экономика.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <a className="rounded-full bg-gold px-6 py-4 font-black text-graphite" href="/kaskada-/catalog/">Смотреть каталог</a>
-            <a className="rounded-full bg-graphite px-6 py-4 font-black text-cream" href="/kaskada-/partners/">Партнёрам</a>
-            <a className="rounded-full border border-graphite/20 bg-white/60 px-6 py-4 font-black" href="/kaskada-/sellers/">Продавцам</a>
+            <a className="hover-lift rounded-full bg-gold px-6 py-4 font-black text-graphite" href="/kaskada-/catalog/">Смотреть каталог</a>
+            <a className="hover-lift rounded-full bg-graphite px-6 py-4 font-black text-cream" href="/kaskada-/partners/">Партнёрам</a>
+            <a className="hover-lift rounded-full border border-graphite/20 bg-white/60 px-6 py-4 font-black" href="/kaskada-/sellers/">Продавцам</a>
           </div>
         </div>
 
-        <div className="card-glass rounded-[2.2rem] p-6 shadow-soft">
-          <div className="rounded-[1.7rem] bg-graphite p-7 text-cream">
+        <div className="card-glass hover-lift reveal-up relative overflow-hidden rounded-[2.2rem] p-6 shadow-soft">
+          <div className="float-soft absolute right-8 top-8 h-20 w-20 rounded-full bg-gold/30 blur-2xl" />
+          <div className="pulse-soft absolute bottom-10 left-8 h-24 w-24 rounded-full bg-forest/20 blur-2xl" />
+          <div className="relative rounded-[1.7rem] bg-graphite p-7 text-cream">
             <p className="section-label text-xs text-gold">Финансовая модель</p>
             <h2 className="mt-3 text-5xl font-black">20 / 10 / 10</h2>
             <p className="mt-3 leading-7 text-cream/70">20% комиссия: 10% реферальная часть и 10% фонд платформы.</p>
+            <div className="mt-6 grid grid-cols-3 gap-3 text-center text-3xl">
+              <span className="float-soft rounded-2xl bg-white/10 p-4">🛒</span>
+              <span className="float-soft rounded-2xl bg-white/10 p-4">🏪</span>
+              <span className="float-soft rounded-2xl bg-white/10 p-4">🤝</span>
+            </div>
           </div>
-          <div className="mt-5 grid grid-cols-2 gap-3">
+          <div className="relative mt-5 grid grid-cols-2 gap-3">
             <Metric value="80%" label="продавцу" />
             <Metric value="10%" label="реферальная сеть" />
             <Metric value="10%" label="платформа" />
@@ -92,7 +99,7 @@ export default function HomePage() {
 
 function Metric({ value, label }: { value: string; label: string }) {
   return (
-    <div className="rounded-2xl bg-white/70 p-4">
+    <div className="hover-lift rounded-2xl bg-white/70 p-4">
       <p className="text-3xl font-black">{value}</p>
       <p className="mt-1 text-sm font-bold text-neutral-600">{label}</p>
     </div>
