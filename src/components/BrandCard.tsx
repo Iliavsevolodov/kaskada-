@@ -11,8 +11,10 @@ export type BrandCardData = {
 
 export function BrandCard({ brand }: { brand: BrandCardData }) {
   return (
-    <article className="card-glass rounded-[1.8rem] p-6 shadow-soft">
-      <div className="mb-5 flex h-28 items-center justify-center rounded-[1.4rem] bg-graphite text-3xl font-black text-gold">{brand.name.slice(0, 1)}</div>
+    <article className="card-glass hover-lift reveal-up rounded-[1.8rem] p-6 shadow-soft">
+      <div className="product-visual mb-5 flex h-28 items-center justify-center rounded-[1.4rem] bg-graphite text-3xl font-black text-gold">
+        <span className="float-soft relative z-10">{brand.name.slice(0, 1)}</span>
+      </div>
       <p className="text-xs font-black uppercase tracking-[0.18em] text-gold">{brand.city} · {brand.category}</p>
       <h3 className="mt-2 text-2xl font-black">{brand.name}</h3>
       <p className="mt-3 leading-7 text-neutral-600">{brand.description}</p>
