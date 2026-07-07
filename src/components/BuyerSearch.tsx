@@ -17,8 +17,8 @@ export function BuyerSearch() {
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-8" id="search">
-      <div className="rounded-[1.7rem] border border-graphite/8 bg-white p-4 shadow-soft">
-        <div className="flex items-center gap-3 rounded-[1.25rem] bg-[#f3f0ea] px-4 py-3">
+      <div className="border border-graphite/10 bg-white p-4 shadow-soft">
+        <div className="flex items-center gap-3 border border-graphite/8 bg-[#f3f0ea] px-4 py-3">
           <HiMagnifyingGlass className="text-xl text-neutral-500" />
           <input
             className="w-full bg-transparent text-base font-semibold outline-none placeholder:text-neutral-400"
@@ -26,11 +26,11 @@ export function BuyerSearch() {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
-          {query ? <button className="text-xl text-neutral-500" onClick={() => setQuery('')} type="button"><HiXMark /></button> : null}
+          {query ? <button className="border border-graphite/8 px-2 py-1 text-xl text-neutral-500" onClick={() => setQuery('')} type="button"><HiXMark /></button> : null}
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {['крем', 'чай', 'подарок', 'дом', 'акция', 'питомцам'].map((item) => (
-            <button className="rounded-full bg-[#f6d44d] px-4 py-2 text-xs font-black text-graphite" key={item} onClick={() => setQuery(item)} type="button">{item}</button>
+            <button className="border border-[#e2bf35] bg-[#f6d44d] px-4 py-2 text-xs font-black text-graphite" key={item} onClick={() => setQuery(item)} type="button">{item}</button>
           ))}
         </div>
       </div>
