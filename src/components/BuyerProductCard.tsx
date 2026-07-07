@@ -18,10 +18,11 @@ export type BuyerProduct = {
 
 export function BuyerProductCard({ product }: { product: BuyerProduct }) {
   const discount = product.oldPrice ? Math.round((1 - product.price / product.oldPrice) * 100) : 0;
+  const href = `/kaskada-/buyer/products/${product.id}/`;
 
   return (
     <article className="group overflow-hidden rounded-[1.6rem] border border-[#d8c3a8]/70 bg-[#fffaf2] shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
-      <a className="block" href={`/kaskada-/products/${product.id}/`}>
+      <a className="block" href={href}>
         <div className="relative h-52 overflow-hidden bg-[#efe0cd]">
           <img alt={product.name} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#2a1b12]/20 to-transparent" />
@@ -35,7 +36,7 @@ export function BuyerProductCard({ product }: { product: BuyerProduct }) {
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
             <p className="truncate text-[11px] font-bold uppercase tracking-[0.14em] text-[#9c7a55]">{product.category}</p>
-            <a className="mt-1.5 block line-clamp-2 min-h-[44px] text-[15px] font-bold leading-snug text-[#2a1b12]" href={`/kaskada-/products/${product.id}/`}>{product.name}</a>
+            <a className="mt-1.5 block line-clamp-2 min-h-[44px] text-[15px] font-bold leading-snug text-[#2a1b12]" href={href}>{product.name}</a>
             <p className="mt-1 truncate text-sm font-medium text-[#4d6b4a]">{product.brand}</p>
           </div>
           <span className="inline-flex shrink-0 items-center gap-1 rounded-full border border-[#ead6ba] bg-[#fff6e8] px-2.5 py-1.5 text-[11px] font-bold text-[#6f553a]"><HiStar className="text-[#c89b4a]" />{product.rating}</span>
