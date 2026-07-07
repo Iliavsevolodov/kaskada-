@@ -1,6 +1,7 @@
 import { BrandCard } from '@/components/BrandCard';
 import { EconomyCalculator } from '@/components/EconomyCalculator';
 import { ProductCard } from '@/components/ProductCard';
+import { RoleExperienceSwitcher } from '@/components/RoleExperienceSwitcher';
 import { SiteHeader } from '@/components/SiteHeader';
 import { brands, products, statuses } from '@/lib/data';
 
@@ -46,6 +47,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <RoleExperienceSwitcher />
 
       <section className="mx-auto max-w-7xl px-6 py-12">
         <p className="section-label text-xs font-bold text-gold">Каталог</p>
