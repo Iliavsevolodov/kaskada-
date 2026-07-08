@@ -1,44 +1,20 @@
 import type { Metadata, Viewport } from 'next';
-import { Manrope, Playfair_Display } from 'next/font/google';
 import { appConfig } from '@/lib/appConfig';
 import './globals.css';
-
-const manrope = Manrope({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-sans',
-  display: 'swap'
-});
-
-const playfair = Playfair_Display({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-display',
-  display: 'swap'
-});
 
 export const metadata: Metadata = {
   title: appConfig.name,
   description: appConfig.description,
   applicationName: appConfig.name,
-  manifest: '/kaskada-/manifest.webmanifest',
-  appleWebApp: {
-    capable: true,
-    title: appConfig.shortName,
-    statusBarStyle: 'black-translucent'
-  }
+  manifest: '/kaskada-/manifest.webmanifest'
 };
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  themeColor: appConfig.themeColor,
-  viewportFit: 'cover'
+  themeColor: appConfig.themeColor
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="ru" className={`${manrope.variable} ${playfair.variable}`}>
-      <body>{children}</body>
-    </html>
-  );
+export default function RootLayout(props: { children: React.ReactNode }) {
+  return <html lang="ru"><body>{props.children}</body></html>;
 }
