@@ -1,2 +1,2 @@
-export const appVersion = 'v0.2.14';
-export const appVersionName = 'Русский покупательский магазин';
+export const appVersion = 'v0.3.0';
+export const appVersionName = 'Простой интернет-магазин для покупателей';
